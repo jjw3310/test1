@@ -1,0 +1,38 @@
+/* Header Style */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page {
+  display: none;
+  padding: 20px;
+}
+
+/* select page target style */
+.page:target {
+  display: block;
+}
+
+
+
+/* info */
+.info {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("https://s3-alpha-sig.figma.com/img/43a6/c2ce/b3fa8b4ca9412d765375211e15b7ded5?Expires=1700438400&Signature=ciwEV2yDllcxT9BPOH4FEUDi2U8-UZ9htHTB8tcHxQ3JJw72IznQdEK6vQbz0cJfcJ4~3lr~qep0~LRBCSh1f2Zvxl5XwyklrsEkJmlEN1E70v6qOOmEm82ZoUO0Hn6LHqTdpR9PJmP9S9ThdfW4mpS64VGaAjyL-lDeHSnZbQb3pncqTK9n4TYAU3Hvp97q01Yio1QgkJPrRACTep3oyB0JnKUr67~o-I~YSlFUNEmuoHBSR0qeWW3wzXfyFNEOhk5dtCMUZ-51wrYuOfLs1shleCkDdOu8E3IpecJfo2K8OiE6sX0pM6wX9tqvRqAvKSiabN-VdBN-mCWLi4TNVA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4") no-repeat 0px 0px, #FFFFFF;
+  background-size: cover;
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Visualization</title>
+  </head>
+  <body>
+    <h2>Data Visualization</h2>
+    <hr />
+
+    <div id="chart"></div>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+      // show data
+      const data = {{ data|tojson }};
+
+      let x = [];
+      let y = [];
+      for (let i = 0; i < data.length; i++) {
+        x.push(data[i].name);
+        y.push(data[i].age);
+      }
+
+      const trace = {
+        x: x,
+        y: y,
+        type: 'bar'
+      };
+
+      const layout = {
+        title: 'Age Distribution',
+        xaxis: {
+          title: 'Name'
+        },
+        yaxis: {
+          title: 'Age'
+        }
+      };
+
+      const chartData = [trace];
+      Plotly.newPlot('chart', chartData, layout);
+    </script>
+    
+  </body>
+</html>
