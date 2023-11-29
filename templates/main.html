@@ -90,7 +90,6 @@
           console.log(result2);
           console.log(result3);
         
-            // 초기 실행
             // displayDateTime();
           </script>
           
@@ -111,7 +110,6 @@
             -./data.py
           - matplotlib
           - pandas
-          - requests
         </py-env>
         <h1>Interactive shell</h1>
         <py-repl id="my-repl" auto-generate=true> </py-repl>        
@@ -121,22 +119,7 @@
           <div id="pi" class="alert alert-primary"></div>
           <py-script>
             import datetime as dt
-            import requests
             pyscript.write('today', dt.date.today().strftime('%A %B %d, %Y'))
-
-
-            #url = "https://httpbin.org/post"
-            url = "http://httpbin.org/anything"
-            #data = {
-                "name": "test",
-                "age": 30
-            }#
-            #response = requests.post(url, data=data)
-            response = requests.get(url)
-            if response.status_code == 200:
-                print(response.json())
-            else:
-                print("Error:", response.status_code)
           </py-script>       
         </div>
       </div>
